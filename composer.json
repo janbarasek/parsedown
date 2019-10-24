@@ -23,9 +23,9 @@
 		"phpunit/phpunit": "^4.8.35"
 	},
 	"autoload": {
-		"psr-0": {
-			"Parsedown": ""
-		}
+		"classmap": [
+			"src/"
+		]
 	},
 	"autoload-dev": {
 		"psr-0": {
