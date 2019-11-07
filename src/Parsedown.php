@@ -1277,7 +1277,7 @@ class Parsedown
 		return null;
 	}
 
-	protected function inlineUrlTag(array $excerpt): array
+	protected function inlineUrlTag(array $excerpt): ?array
 	{
 		if (strpos($excerpt['text'], '>') !== false && preg_match('/^<(\w+:\/{2}[^ >]+)>/i', $excerpt['text'], $matches)) {
 			return [
